@@ -20,7 +20,7 @@ export const Chat = ({ friendIndex }: ChatProps) => {
   const scrollRef = useRef(null as unknown as HTMLDivElement);
 
   useEffect(() => {
-    scrollRef.current.scrollIntoView();
+    scrollRef.current?.scrollIntoView();
   });
 
   return friends.length ? (
